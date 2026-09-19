@@ -1,0 +1,3 @@
+Briefly describe how the pragma omp barrier command works in this program?
+
+The omp barrier synchronizes all threads in the parallelized part of code. Each thread must reach the barrier before any thread can continue executing the statements after it. Therefore all thread print messages are printed before 'Outside Barrier' messages can execute. The order of the messages may vary because the threads execute concurrently.  
