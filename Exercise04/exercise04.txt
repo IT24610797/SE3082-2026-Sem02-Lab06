@@ -1,1 +1,4 @@
 
+Without collapse(2), parallel for distributes only the outer loop, which contains 5 iterations. Each thread that receives an outer loop iteration executes all 10 inner loop iteration.
+
+With collapse(2), OpenMP combines both loops into single iteration space containing 50 iterations. These 50 iterations can be then distributes more evenly among the available threads. 
