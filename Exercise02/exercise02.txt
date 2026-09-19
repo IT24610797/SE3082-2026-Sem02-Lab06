@@ -1,1 +1,1 @@
-
+The omp single allows only one thread to execute the block of code. That thread is selected by OpenMP and does not have to be the first thread. The other threads skip the block. 
