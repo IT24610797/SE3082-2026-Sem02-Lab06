@@ -1,1 +1,2 @@
 
+The omp master allows only master thread (thread 0) to execute the associated block. Unlike omp single, the master construct does not have an barrier at the end. Therefore, other threads can continue without waiting for master thread.
